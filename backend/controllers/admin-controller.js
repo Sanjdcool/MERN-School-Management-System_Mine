@@ -9,7 +9,6 @@ const Complain = require('../models/complainSchema.js');
 
 // const adminRegister = async (req, res) => {
 //     try {
-           console.log('AdminReg request body:', req.body);
 //         const salt = await bcrypt.genSalt(10);
 //         const hashedPass = await bcrypt.hash(req.body.password, salt);
 
@@ -58,6 +57,7 @@ const Complain = require('../models/complainSchema.js');
 
 const adminRegister = async (req, res) => {
     try {
+        console.log('AdminReg request body:', req.body);
         const admin = new Admin({
             ...req.body
         });
